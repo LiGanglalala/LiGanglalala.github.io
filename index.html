@@ -113,7 +113,7 @@ button:active {
 
 <div id="container"></div>
 <div id="info">和萝卜在一起的时间：</div>
-<div class="clock" style="margin:0 auto;width: 800px;text-align: center;"></div>
+<div class="clock" style="margin:0 auto;width: 600px;"></div>
 <script>
 
 var table = [
@@ -263,7 +263,8 @@ var clock;
 
 				// Instantiate a coutdown FlipClock
 				clock = $('.clock').FlipClock(diff, {
-					clockFace: 'DailyCounter'
+					clockFace: 'DailyCounter',
+					showSeconds: false
 				});
 			});
 function init() {
